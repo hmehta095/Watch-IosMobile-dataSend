@@ -23,6 +23,22 @@ class ViewController: UIViewController, WCSessionDelegate {
     func sessionDidDeactivate(_ session: WCSession) {
         
     }
+    @IBOutlet weak var msgFromWatch: UILabel!
+    @IBOutlet weak var msgFromWatcholor: UILabel!
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+          // Output message to terminal
+          print("WATCH: I received a message: \(message)")
+          
+          // Get the "name" key out of the dictionary
+          // and show it in the label
+          let name = message["name"] as! String
+          let color = message["color"] as! String
+          msgFromWatch.text = name
+          msgFromWatcholor.text = color
+      }
+    
+    
+    
     
     @IBOutlet weak var checkConnection: UILabel!
     override func viewDidLoad() {
@@ -41,6 +57,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                          checkConnection.text = "WC NOT supported!"
                      }
         }
+    
     
     @IBOutlet weak var sendMessageOutputLabel: UILabel!
     @IBAction func sendMessgaeButton(_ sender: Any) {

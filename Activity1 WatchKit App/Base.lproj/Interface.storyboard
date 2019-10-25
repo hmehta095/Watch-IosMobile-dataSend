@@ -13,11 +13,20 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Activity1_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="134" height="33" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="NS9-IB-M9S"/>
+                        <button width="1" alignment="left" title="Send Msg to Watch" id="A0B-6d-Ob9">
+                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="backgroundColor" red="0.002888324389" green="0.054154038940000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="sendMsgToWatch" destination="AgC-eL-Hgc" id="K7I-Cm-NfC"/>
+                            </connections>
+                        </button>
+                        <label width="132" alignment="left" text="Message Send information" id="1Yo-Fh-Ufs"/>
                         <label width="130" height="33" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="A19-Bi-QXi"/>
                     </items>
                     <connections>
                         <outlet property="msgFromPhoneLabel" destination="NS9-IB-M9S" id="Yle-1t-GB4"/>
                         <outlet property="msgFromPhoneLabelAge" destination="A19-Bi-QXi" id="RLM-uZ-hX8"/>
+                        <outlet property="sendMessageOutputLabel" destination="1Yo-Fh-Ufs" id="gOF-Pa-7Sc"/>
                     </connections>
                 </controller>
             </objects>

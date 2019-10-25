@@ -62,4 +62,24 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate  {
         super.didDeactivate()
     }
 
+    @IBOutlet weak var sendMessageOutputLabel: WKInterfaceLabel!
+    @IBAction func sendMsgToWatch() {
+     
+
+                       print("Sending message to phone")
+                           // ------ SEND MESSAGE TO WATCH CODE GOES HERE
+
+                        if(WCSession.default.isReachable == true){
+                //            Here is the message you want to send to the watch
+                            let message = ["name":"banana" , "color": "yellow"]
+                            WCSession.default.sendMessage(message, replyHandler: nil)
+        //                    messageCounter = messageCounter+1
+                          sendMessageOutputLabel.setText("Message Sent")
+                            }
+                            else {
+        //                        messageCounter = messageCounter + 1
+                                sendMessageOutputLabel.setText("Cannot reach watch! ")
+                            }
+        
+    }
 }

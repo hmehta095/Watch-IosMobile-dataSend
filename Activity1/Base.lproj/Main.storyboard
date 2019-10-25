@@ -45,12 +45,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufG-hy-CJg">
+                                <rect key="frame" x="136" y="710" width="111" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
                         <outlet property="checkConnection" destination="0Ci-xg-PWl" id="hFB-TE-6pg"/>
+                        <outlet property="msgFromWatch" destination="Y77-KN-wbr" id="HPg-50-lNO"/>
+                        <outlet property="msgFromWatcholor" destination="ufG-hy-CJg" id="Ll2-70-3I0"/>
                         <outlet property="sendMessageOutputLabel" destination="Oxg-b9-MJj" id="SpX-Xx-0EJ"/>
                     </connections>
                 </viewController>
