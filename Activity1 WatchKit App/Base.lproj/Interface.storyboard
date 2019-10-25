@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Activity1_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="134" height="33" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="NS9-IB-M9S"/>
+                        <label width="130" height="33" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="A19-Bi-QXi"/>
+                    </items>
+                    <connections>
+                        <outlet property="msgFromPhoneLabel" destination="NS9-IB-M9S" id="Yle-1t-GB4"/>
+                        <outlet property="msgFromPhoneLabelAge" destination="A19-Bi-QXi" id="RLM-uZ-hX8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="158"/>
+        </scene>
+    </scenes>
+</document>
